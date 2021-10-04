@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colour Flipper</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <style>
+      * {
+        font-family: Poppins;
+      }
+      .heading {
+        margin-top: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Poppins;
+        font-weight: bold;
+        font-size: 3em;
+      }
+
+      .flip-box {
+        height: 40vh;
+        width: 30vw;
+        margin-top: 3%;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #8ec2b0;
+        border-radius: 10px;
+      }
+
+      .content {
+        width: 50%;
+        height: 5vh;
+        margin-top: 3%;
+        margin-right: auto;
+        margin-left: auto;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .buttons {
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        padding: 10px 30px;
+        font-weight: bold;
+      }
+      .left-text {
+        font-weight: bold;
+        font-size: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading">Colour Flipper</div>
+
+    <div id="flip-box" class="flip-box"></div>
+
+    <div class="content">
+      <div class="left-text">Colour <span id="colour">#8ec2b0</span></div>
+
+      <div class="right-text">
+        <button id="flip-button" class="buttons">Flip</button>
+      </div>
+    </div>
+
+    <script src="flip.js"></script>
+  </body>
+</html>
